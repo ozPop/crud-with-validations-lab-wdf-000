@@ -15,5 +15,11 @@ end
 
 group :development do
   gem 'web-console', '~> 2.0'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-byebug'
+  gem 'meta_request'
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
