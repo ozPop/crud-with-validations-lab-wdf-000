@@ -1,0 +1,12 @@
+<!-- The table could use improvement for better display of data -->
+<div style="width: 80%; margin: 0 auto;">
+  <table>
+    <tbody>
+      <% @songs.each do |song| %>
+        <tr>
+          <td style="font-size: 36px;"><%= link_to song.title, song_path(song) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
