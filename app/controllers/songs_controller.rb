@@ -21,6 +21,17 @@ class SongsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @song.update(song_params(:title, :release_year, :artist_name, :released, :genre))
+      redirect_to song_path(@song)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def song_params(*args)
